@@ -18,6 +18,7 @@ func addApproutes(route *mux.Router) {
 	route.HandleFunc("/", renderHome)
 	route.HandleFunc("/servers", getServerAddresses).Methods("GET")
 	route.HandleFunc("/doctors", getDoctors).Methods("GET")
+	route.HandleFunc("/doctorsImage", getDoctorsImage).Methods("GET")
 
 	/*
 		route.HandleFunc("/user", insertUser).Methods("POST")

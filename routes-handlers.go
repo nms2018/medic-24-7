@@ -9,6 +9,10 @@ func renderHome(response http.ResponseWriter, request *http.Request) {
 	http.ServeFile(response, request, "/views/index.html")
 }
 
+func getDoctorsImage(response http.ResponseWriter, request *http.Request) {
+	http.ServeFile(response, request, "public/doctors/doctorspicture.jpg")
+}
+
 func getServerAddresses(response http.ResponseWriter, request *http.Request) {
 
 	var httpError = ErrorResponse{
