@@ -6,7 +6,7 @@ import (
 )
 
 func renderHome(response http.ResponseWriter, request *http.Request) {
-	http.ServeFile(response, request, "/views/index.html")
+	http.ServeFile(response, request, "public/views/index.html")
 }
 
 func getDoctorsImage(response http.ResponseWriter, request *http.Request) {
